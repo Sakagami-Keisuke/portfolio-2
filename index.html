@@ -14,56 +14,66 @@
 
   <body>
     <header class="header">
-      <div class="header-inner">
-        <h1 class="header-logo">
+      <div class="header__inner">
+        <h1 class="header__inner_logo">
           <a href="#"><img src="img/logo_transparent@2x.png" alt="h1画像" /></a>
         </h1>
-        <nav class="header-nav"></nav>
-        <ul class="header-nav-list">
-          <li class="header-nav-list-item"><a href="#">Top</a></li>
-          <li class="header-nav-list-item"><a href="#">My Challenge</a></li>
-          <li class="header-nav-list-item"><a href="#">Just Continue</a></li>
+        <nav class="header__nav"></nav>
+        <ul class="header__nav_list">
+          <li class="header__nav_listItem"><a href="#">Top</a></li>
+          <li class="header__nav_listItem"><a href="#">My Challenge</a></li>
+          <li class="header__nav_listItem"><a href="#">Just Continue</a></li>
         </ul>
-        <!-- /header-nav-list -->
+        <!-- /header__nav_list-->
       </div>
-      <!-- /header-inner -->
+      <!-- /header__nner -->
     </header>
     <!-- /header -->
 
-    <div class="mv">
-      <img src="img/austin-distel-wawEfYdpkag-unsplash.png" alt="h2画像" />
-      <h2 class="mv-copy-ttl">Cording! Cording! Everyday!!</h2>
-      <p class="mv-copy-text">start from HERE</p>
+    <div class="topImage">
+      <img
+        class="topimage__image"
+        src="img/austin-distel-wawEfYdpkag-unsplash.png"
+        alt="h2画像"
+      />
+      <h2 class="topImage__catch">Cording! Cording! Everyday!!</h2>
+      <p class="topImage__text">start from HERE</p>
     </div>
-    <!-- /mv -->
+    <!-- /topImage-->
 
     <section class="contents">
-      <div class="contents-inner">
-        <h2 class="section-ttl">My Challenge</h2>
+      <div class="contents__inner">
+        <h2 class="contents__title">My Challenge</h2>
       </div>
       <!-- /contents -->
 
       <div class="wrapper">
         <div class="contents-box">
-          <fiugure class="contents-box-img"
+          <fiugure class="contents-box__img"
             ><img src="img/brooke-cagle-g1Kr4Ozfoac-unsplash (1).png" alt=""
           /></fiugure>
-          <div class="contents-box-info"></div>
-          <h2>もくもく会in大阪のコーディングイベントに参加してきました！！</h2>
-          <time datetime="2021.06.01">2021.06.01</time>
+          <div class="contents-box__info"></div>
+          <h2 class="contents-box__info_text">
+            もくもく会in大阪のコーディングイベントに参加してきました！！
+          </h2>
+          <time class="contents-box__datetime" datetime="2021.06.01"
+            >2021.06.01</time
+          >
         </div>
         <!-- /contents-box -->
 
         <div class="contents-box">
-          <fiugure class="contents-box-img"
+          <fiugure class="contents-box__img"
             ><img src="img/brooke-cagle-NoRsyXmHGpI-unsplash.png" alt=""
           /></fiugure>
-          <div class="contents-box-info"></div>
-          <h2>
+          <div class="contents-box__info"></div>
+          <h2 class="contents-box__info_text">
             模写コーディングを１つ終わらせ ることができました！！次はもう
             少し難しいものに挑戦します！
           </h2>
-          <time datetime="2021.06.15">2021.06.15</time>
+          <time class="contents-box__datetime" datetime="2021.06.15"
+            >2021.06.15</time
+          >
         </div>
         <!-- /contents-box -->
 
@@ -71,23 +81,33 @@
           <fiugure class="contents-box-img"
             ><img src="img/kevin-hendersen-MQ4eKnHtOUg-unsplash.png" alt=""
           /></fiugure>
-          <div class="contents-box-info"></div>
-          <h2>
+          <div class="contents-box__info"></div>
+          <h2 class="contents-box__info_text">
             「1冊ですべて身につくHTML&C SSとWebデザイン入門講座」を
             完走しました！！
           </h2>
-          <time datetime="2021.06.20">2021.06.20</time>
+          <time class="contents-box__datetime" datetime="2021.06.20"
+            >2021.06.20</time
+          >
         </div>
         <!-- /contents-box -->
       </div>
       <!-- /wrapper -->
-      <a href="https://sakagami-keisuke.github.io/portfolio-1/index.html" class="btn">もっと見る</a>
+      <a
+        href="https://sakagami-keisuke.github.io/portfolio-1/index.html"
+        class="seeMore-btn"
+        >もっと見る</a
+      >
     </section>
     <section>
-      <div class="cta">
-        <img src="img/tim-bogdanov-4uojMEdcwI8-unsplash@2x.png" alt="h2画像" />
-        <h2 class="cta-copy-ttl">Just Continue</h2>
-        <p class="cta-copy-text">
+      <div class="landing">
+        <img
+          class="landing__img"
+          src="img/tim-bogdanov-4uojMEdcwI8-unsplash@2x.png"
+          alt="h2画像"
+        />
+        <h2 class="landing__catch">Just Continue</h2>
+        <p class="landing__text">
           日々、学び続ける <br />
           いつか、Webで世界を今より少しだけ<br />
           よくするために<br />
@@ -95,15 +115,19 @@
           毎日少しずつ勉強する<br />
           そんな私と共に学んでくれる方を募集しています
         </p>
-        <a class="btn" href="https://github.com/Sakagami-Keisuke/portfolio-2">お問い合わせしてみる</a>
+        <a
+          class="landing__inquiry-btn"
+          href="https://github.com/Sakagami-Keisuke/portfolio-2"
+          >お問い合わせしてみる</a
+        >
       </div>
-      <!-- /mv -->
+      <!-- /landing -->
     </section>
     <!-- 広告など -->
     <aside></aside>
   </body>
   <footer class="footer">
-    <p>
+    <p class="footer__copyright">
       <small
         >copyright(C) 2021 XDコーディングデモサイト All Rights Reserved.
       </small>

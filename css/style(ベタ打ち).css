@@ -4,7 +4,8 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", Meiryo, sans-serif;
 }
 
 a {
@@ -21,53 +22,47 @@ img {
   height: 80px;
 }
 
-.header__inner {
+.header .header-inner {
   max-width: 980px;
   margin: 0 auto;
   padding: 0 20px;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.header__inner_logo {
+.header-logo a img {
   width: 179px;
   height: 40px;
 }
 
-.header__nav_list {
+.header-nav-list {
   text-align: center;
   font-size: 0px;
 }
 
-.header__nav_listItem {
+.header-nav-list-item {
   padding-left: 20px;
   display: inline-block;
   font-size: 16px;
 }
 
-.header__nav_listItem a {
+.header-nav-list-item a {
   font-weight: bold;
 }
 
-.topImage {
+.mv {
   position: relative;
   height: 551px;
 }
 
-.topImage__image {
+.mv img {
   width: 100%;
   height: 100%;
 }
 
-.topImage__catch {
+.mv h2 {
   position: absolute;
   top: 254px;
   left: 452px;
@@ -76,7 +71,7 @@ img {
   font-weight: bold;
 }
 
-.topImage__text {
+.mv p {
   position: absolute;
   top: 307px;
   left: 620px;
@@ -85,13 +80,13 @@ img {
   font-weight: bold;
 }
 
-.contents__inner {
+.contents-inner {
   margin-left: auto;
   margin-right: auto;
   max-width: 980px;
 }
 
-.contents__title {
+.section-ttl {
   font-size: 32px;
   font-weight: bold;
   text-align: center;
@@ -104,12 +99,8 @@ img {
   margin: 0 auto;
   width: 1366px;
   height: 350px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .contents-box {
@@ -117,12 +108,10 @@ img {
   height: 336px;
   margin-left: 12.5px;
   margin-right: 12.5px;
-  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
 
-.contents-box__info_text {
+.contents-box h2 {
   height: 128px;
   padding: 17px 20px 0 20px;
   line-height: 26px;
@@ -131,19 +120,18 @@ img {
   font-weight: bold;
 }
 
-.contents-box__datetime {
+.contents-box time {
   padding-left: 20px;
   color: #333333;
   font-size: 16px;
   font-weight: normal;
 }
 
-.seeMore-btn {
+.btn {
   display: block;
   width: 310px;
   height: 52px;
-  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   color: #333333;
   font-size: 18px;
   font-weight: normal;
@@ -152,22 +140,21 @@ img {
   line-height: 52px;
   margin-right: auto;
   margin-left: auto;
-  cursor: pointer;
 }
 
-.landing {
+.cta {
   margin-top: 88px;
   width: 1366px;
   height: 455px;
   position: relative;
 }
 
-.landing__img {
+.cta img {
   width: 1366px;
   height: 455px;
 }
 
-.landing__catch {
+.cta h2 {
   position: absolute;
   top: 59px;
   left: 564px;
@@ -176,7 +163,7 @@ img {
   font-weight: bold;
 }
 
-.landing__text {
+.cta p {
   position: absolute;
   top: 149px;
   left: 508px;
@@ -187,25 +174,23 @@ img {
   line-height: 27.5px;
 }
 
-.landing__inquiry-btn {
+.cta a {
   position: absolute;
-  top: 355px;
+  top: 317px;
   left: 578px;
   width: 210px;
   height: 54px;
-  background-color: #83032a;
+  background-color: #83032A;
   color: #fff;
   font-size: 16px;
   font-weight: bold;
   display: block;
   text-align: center;
-  line-height: 54px;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   border-radius: 5px;
 }
 
-.footer__copyright {
+.footer p{
   width: 1366px;
   height: 80px;
   background-color: #333333;
@@ -214,6 +199,5 @@ img {
   font-weight: bold;
   display: block;
   text-align: center;
-  line-height: 80px;
+line-height: 80px;
 }
-/*# sourceMappingURL=style.css.map */
