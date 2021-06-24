@@ -156,18 +156,22 @@ img {
 }
 
 .landing {
+  content-visibility: auto;
+}
+
+.landing__box {
   margin-top: 88px;
   width: 1366px;
   height: 455px;
   position: relative;
 }
 
-.landing__img {
+.landing__box_img {
   width: 1366px;
   height: 455px;
 }
 
-.landing__catch {
+.landing__box_catch {
   position: absolute;
   top: 59px;
   left: 564px;
@@ -176,7 +180,7 @@ img {
   font-weight: bold;
 }
 
-.landing__text {
+.landing__box_text {
   position: absolute;
   top: 149px;
   left: 508px;
@@ -187,7 +191,7 @@ img {
   line-height: 27.5px;
 }
 
-.landing__inquiry-btn {
+.landing__box_inquiry-btn {
   position: absolute;
   top: 355px;
   left: 578px;
