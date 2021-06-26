@@ -4,6 +4,24 @@
   // 例 @include fz(18); → 1.8 rem ＊ 10px{{ ↓16px ＊ 0.625 }}
 }
 
+//変数定義--------------------------------------------
+$contentscolor:rgb(170, 170, 250);
+$fontcolor: #333333;
+$reversalfontcolor: #ffffff;
+$fontfamily: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+  "Hiragino Sans", Meiryo, sans-serif;
+
+//aタグボタン共通----------------------------------------------------
+@mixin a-btn {
+  display: block;
+  color: $fontcolor;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+//----------------------------------------------------
 html {
   width: 1366px;
   margin: 0 auto;
@@ -13,13 +31,12 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
-    "Hiragino Sans", Meiryo, sans-serif;
+  font-family: $fontfamily;
 }
 
 a {
   text-decoration: none;
-  color: #333;
+  color: $fontcolor;
 }
 
 img {
@@ -76,7 +93,7 @@ img {
     position: absolute;
     top: 254px;
     left: 452px;
-    color: #fff;
+    color: $reversalfontcolor;
     font-size: 36px;
     font-weight: bold;
   }
@@ -85,7 +102,7 @@ img {
     position: absolute;
     top: 307px;
     left: 620px;
-    color: #fff;
+    color: $reversalfontcolor;
     font-size: 16px;
     font-weight: bold;
   }
@@ -100,6 +117,7 @@ img {
 
   &__title {
     font-size: 32px;
+    color: $fontcolor;
     font-weight: bold;
     text-align: center;
     line-height: 1.2;
@@ -121,6 +139,8 @@ img {
   height: 336px;
   margin-left: 12.5px;
   margin-right: 12.5px;
+  // background-color: lighten($contentscolor,5%);
+  background-color: transparentize($contentscolor,.8);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
 
@@ -128,33 +148,36 @@ img {
     height: 128px;
     padding: 17px 20px 0 20px;
     line-height: 26px;
-    color: #333333;
+    color: $fontcolor;
     font-size: 18px;
     font-weight: bold;
   }
 
   &__datetime {
     padding-left: 20px;
-    color: #333333;
+    color: $fontcolor;
     font-size: 16px;
     font-weight: normal;
   }
 }
 
 .seeMore-btn {
-  display: block;
-  width: 310px;
-  height: 52px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-  color: #333333;
-  font-size: 18px;
-  font-weight: normal;
   margin-top: 35px;
-  text-align: center;
-  line-height: 52px;
   margin-right: auto;
   margin-left: auto;
-  cursor: pointer;
+  width: 310px;
+  height: 52px;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 52px;
+  // background-color: darken($contentscolor,4%);
+  background-color: adjust-hue($contentscolor,15);
+  @include a-btn;
+  // display: block;
+  // color: $fontcolor;
+  // text-align: center;
+  // cursor: pointer;
+  // box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
 
 .landing {
@@ -176,7 +199,7 @@ img {
       position: absolute;
       top: 59px;
       left: 564px;
-      color: #fff;
+      color: $reversalfontcolor;
       font-size: 36px;
       font-weight: bold;
     }
@@ -185,7 +208,7 @@ img {
       position: absolute;
       top: 149px;
       left: 508px;
-      color: #fff;
+      color: $reversalfontcolor;
       font-size: 16px;
       font-weight: bold;
       text-align: center;
@@ -193,20 +216,17 @@ img {
     }
 
     &_inquiry-btn {
+      @include a-btn;
       position: absolute;
       top: 355px;
       left: 578px;
       width: 210px;
       height: 54px;
       background-color: #83032a;
-      color: #fff;
+      color: $reversalfontcolor;
       font-size: 16px;
       font-weight: bold;
-      display: block;
-      text-align: center;
       line-height: 54px;
-      transition: 0.3s;
-      border-radius: 5px;
     }
   }
 }
@@ -216,7 +236,7 @@ img {
     width: 1366px;
     height: 80px;
     background-color: #333333;
-    color: #fff;
+    color: $reversalfontcolor;
     font-size: 16px;
     font-weight: bold;
     display: block;
