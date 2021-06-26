@@ -1,6 +1,15 @@
+//ユーザーがフォント設定変更して可変してよい画面のみ
+@mixin fz($size: 16px) {
+  font-size: ($size / 10) + rem;
+  // 例 @include fz(18); → 1.8 rem ＊ 10px{{ ↓16px ＊ 0.625 }}
+}
+
 html {
   width: 1366px;
   margin: 0 auto;
+  font-size: 62.5%;
+  // 基本的にブラウザのデフォルトのフォントサイズは16px
+  // html要素font-size: 62.5%を指定するとpxにすると10px(=1rem)になる
 }
 
 body {
