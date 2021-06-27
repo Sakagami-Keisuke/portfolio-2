@@ -1,13 +1,17 @@
+@charset "utf-8";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 //変数定義--------------------------------------------
 $contentscolor: rgb(170, 170, 250);
 $fontcolor: #333333;
 $reversalfontcolor: #ffffff;
-$fontfamily: "Helvetica Neue",
-Arial,
-"Hiragino Kaku Gothic ProN",
-"Hiragino Sans",
-Meiryo,
-sans-serif;
+$fontfamily: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+  "Hiragino Sans", Meiryo, sans-serif;
 $topimageheight: 551px;
 $pcwidth: 1366px;
 
@@ -193,6 +197,14 @@ img {
   @include a-btn;
 }
 
+.contents-box:hover {
+  opacity: 0.7;
+}
+
+.seeMore-btn:hover {
+  opacity: 0.7;
+}
+
 .landing {
   content-visibility: auto;
   // contain-intrinsic-size: 500px;
@@ -239,6 +251,10 @@ img {
       width: 210px;
       height: 54px;
     }
+
+    &_inquiry-btn:hover {
+      opacity: 0.7;
+    }
   }
 }
 
@@ -255,3 +271,27 @@ img {
     text-align: center;
   }
 }
+
+//厳密なレスポンシブ対応
+//breakPont/スマホーーーーーーーーーーーーーーーーーーーー
+@media screen and(max-width:639px) {
+}
+//breakPont/タブレットーーーーーーーーーーーーーーーーーーーー
+@media screen and(min-width:640px) and (max-width: 1023px) {
+}
+//breakPont/ノートPCーーーーーーーーーーーーーーーーーーーー
+@media screen and(min-width:1024px) {
+}
+//breakPont/デスクトップPCーーーーーーーーーーーーーーーーーーーー
+@media screen and(min-width:1400px) {
+}
+//ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+
+//スマホ・PCのみレスポンシブ対応
+//breakPont/スマホーーーーーーーーーーーーーーーーーーーー
+@media screen and(max-width:896px) {
+}
+//breakPont/ノートPCーーーーーーーーーーーーーーーーーーーー
+@media screen and(min-width:897px) {
+}
+
