@@ -68,21 +68,25 @@ img {
   height: 100%;
 }
 
-.topImage__catch {
+.topImage__catch, .landing__box_catch {
   position: absolute;
-  top: 254px;
-  left: 452px;
+  top: 250.5px;
+  left: 683px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   color: #ffffff;
-  font-size: 36px;
+  font-size: 3.6rem;
   font-weight: bold;
 }
 
-.topImage__text {
+.topImage__text, .landing__box_text, .landing__box_inquiry-btn {
   position: absolute;
-  top: 307px;
-  left: 620px;
+  top: 300.5px;
+  left: 683px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   color: #ffffff;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: bold;
 }
 
@@ -146,14 +150,17 @@ img {
   margin-right: auto;
   margin-left: auto;
   width: 310px;
-  height: 52px;
-  font-size: 18px;
+  height: 54px;
+  font-size: 1.8rem;
   font-weight: normal;
-  line-height: 52px;
+  line-height: 2.9;
   background-color: #beaafa;
   display: block;
   color: #333333;
   text-align: center;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 3;
   cursor: pointer;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
@@ -179,45 +186,40 @@ img {
 }
 
 .landing__box_catch {
-  position: absolute;
-  top: 59px;
-  left: 564px;
+  top: 77.75px;
   color: #ffffff;
-  font-size: 36px;
+  font-size: 3.6rem;
   font-weight: bold;
 }
 
 .landing__box_text {
-  position: absolute;
-  top: 149px;
-  left: 508px;
+  top: 225.5px;
   color: #ffffff;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
-  line-height: 27.5px;
+  line-height: 1.72;
 }
 
 .landing__box_inquiry-btn {
+  top: 377.33333px;
   display: block;
   color: #333333;
   text-align: center;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 3;
   cursor: pointer;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   -webkit-transition: 0.3s;
   transition: 0.3s;
   border-radius: 5px;
-  position: absolute;
-  top: 355px;
-  left: 578px;
-  width: 210px;
-  height: 54px;
   background-color: #83032a;
   color: #ffffff;
-  font-size: 16px;
   font-weight: bold;
-  line-height: 54px;
+  width: 210px;
+  height: 54px;
 }
 
 .footer__copyright {
@@ -225,10 +227,10 @@ img {
   height: 80px;
   background-color: #333333;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 5;
   font-weight: bold;
   display: block;
   text-align: center;
-  line-height: 80px;
 }
 /*# sourceMappingURL=style.css.map */
