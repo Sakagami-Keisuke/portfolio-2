@@ -1,5 +1,6 @@
 # XDデザインコーディング2
-## browser : chrome　　https://sakagami-keisuke.github.io/portfolio-2/
+## Ctrl+Click　　　　https://sakagami-keisuke.github.io/portfolio-2/
+
 ## 3 Sass 記法 リファクタリング
 ![image](https://user-images.githubusercontent.com/60636597/123534988-fb1e6100-d75b-11eb-9ce9-075bad79b67c.png)
 
